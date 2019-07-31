@@ -22,7 +22,7 @@ class Test_ABC:
         assert 1
 
     @allure.issue('http://www.haodf.com/')
-    @allure.testcase('http://www.haodf.com/testabc')
+    @allure.testcase('http://www.haodf.com/testab')
     @allure.severity('Critical')
     def test_b(self):
         allure.attach("这是一个描叙", "试一下")
