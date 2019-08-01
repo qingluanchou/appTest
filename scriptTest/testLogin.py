@@ -73,7 +73,7 @@ class SimpleIOSTests(unittest.TestCase):
     
         sleep(5)
         
-        self.driver.find_element_by_ios_predicate('type == "XCUIElementTypeButton" AND name == "医院"').click()
+        #self.driver.find_element_by_ios_predicate('type == "XCUIElementTypeButton" AND name == "医院"').click()
 
 
 #         sleep(10)
