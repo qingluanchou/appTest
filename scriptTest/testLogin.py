@@ -60,7 +60,8 @@ class SimpleIOSTests(unittest.TestCase):
         self.driver.find_element_by_name('使用用户名密码方式登录').click()
     
         sleep(1)
-        
+
+        self.driver.find_element_by_class_name('UIATextField').clear()
         self.driver.find_element_by_class_name('UIATextField').send_keys("huiwang227")
         self.driver.find_element_by_class_name('UIASecureTextField').send_keys("haodf1907")
         
