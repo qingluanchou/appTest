@@ -16,19 +16,7 @@ class SimpleIOSTests(unittest.TestCase):
         
         self.driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
-            desired_capabilities={
-                'autoAcceptAlerts': 'false',
-                "platformName": "iOS",
-                "newCommandTimeout": 3600,
-                "noReset": 'true',
-                "xcodeOrgId": "5CKSJSE23P",
-                "xcodeSigningId": "iPhone Developer",
-                "udid": "c59c9d392cae18b451d6410d5a6588498a4c5d00",
-                "bundleId": "com.haodf.newPatient",
-                "platformVersion": "11.4.1",
-                "deviceName": "wen的 iPhone",
-                "automationName": "XCUITest"
-            })
+            )
 
     def tearDown(self):
         self.driver.quit()
